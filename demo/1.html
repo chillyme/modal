@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>示例</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no,email=no,address=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link type="text/css" rel="stylesheet" href="../dist/skin/default.min.css" />
+</head>
+
+<body>
+    <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script src="../dist/modal.min.js"></script>
+    <script>
+        // modal.alert("Sorry，活动已经结束！");
+
+        // modal.alert({
+        	// icon: "sad",
+        	// content: "Sorry，活动已经结束！"
+        // });
+
+        modal.confirm("您确定要删除这条记录吗？");
+
+        // modal.confirm({
+            // icon: "question",
+            // content: "您确定要删除这条记录吗？"
+        // });
+
+        // modal.prompt("请输入您的姓名...", function(value, index, dom){
+            // console.log(value);
+        // }, function(value, index, dom){
+            // console.log(value);
+        // });
+
+        // modal.prompt({
+        	// title: "请输入您的姓名...",
+        	// value: "dingwei"
+        // }, function(value, index, dom){
+            // console.log(value);
+        // }, function(value, index, dom){
+            // console.log(value);
+        // });
+
+        // modal.msg("正在删除");
+
+        // modal.msg({
+            // icon: "loading",
+            // content: "正在删除"
+        // });
+
+        // modal.loading();
+    </script>
+</body>
+</html>

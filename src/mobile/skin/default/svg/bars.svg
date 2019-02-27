@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30">
+	<rect x="0" y="2.5" width="4" height="25" rx="0" fill="#f47e60">
+		<animate attributeName="height" begin="0.5s" dur="1s" values="25;20;15;10;30;25" calcMode="linear" repeatCount="indefinite" />
+		<animate attributeName="y" begin="0.5s" dur="1s" values="2.5;5;7.5;10;0;2.5" calcMode="linear" repeatCount="indefinite" />
+	</rect>
+	<rect x="9" y="2.5" width="4" height="25" rx="0" fill="#f8b26a">
+		<animate attributeName="height" begin="0.25s" dur="1s" values="25;20;15;10;30;25" calcMode="linear" repeatCount="indefinite" />
+		<animate attributeName="y" begin="0.25s" dur="1s" values="2.5;5;7.5;10;0;2.5" calcMode="linear" repeatCount="indefinite" />
+	</rect>
+	<rect x="18" y="0" width="4" height="30" rx="0" fill="#abbd81">
+		<animate attributeName="height" begin="0s" dur="1s" values="25;20;15;10;30;25" calcMode="linear" repeatCount="indefinite" />
+		<animate attributeName="y" begin="0s" dur="1s" values="2.5;5;7.5;10;0;2.5" calcMode="linear" repeatCount="indefinite" />
+	</rect>
+	<rect x="27" y="2.5" width="4" height="25" rx="0" fill="#f8b26a">
+		<animate attributeName="height" begin="0.25s" dur="1s" values="25;20;15;10;30;25" calcMode="linear" repeatCount="indefinite" />
+		<animate attributeName="y" begin="0.25s" dur="1s" values="2.5;5;7.5;10;0;2.5" calcMode="linear" repeatCount="indefinite" />
+	</rect>
+	<rect x="36" y="2.5" width="4" height="25" rx="0" fill="#f47e60">
+		<animate attributeName="height" begin="0.5s" dur="1s" values="25;20;15;10;30;25" calcMode="linear" repeatCount="indefinite" />
+		<animate attributeName="y" begin="0.5s" dur="1s" values="2.5;5;7.5;10;0;2.5" calcMode="linear" repeatCount="indefinite" />
+	</rect>
+</svg>

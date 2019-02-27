@@ -1,0 +1,193 @@
+/* 样式 */
+.ui-modal-shade,
+.ui-modal-backdrop,
+.ui-modal { position:fixed; }
+
+.ui-modal-shade,
+.ui-modal-backdrop { top:0; bottom:0; left:0; right:0; width:100%; height:100%; }
+
+.ui-modal-shade { z-index:1000000; cursor:default; display:none; }
+
+.ui-modal,
+.ui-modal:before,
+.ui-modal:after,
+.ui-modal *,
+.ui-modal *:before,
+.ui-modal *:after { -webkit-box-sizing:content-box; -moz-box-sizing:content-box; box-sizing:content-box; }
+
+.ui-modal { border-radius:2px; background-color:#fff; box-shadow:0 0 5px rgba(0,0,0,0.2); font-family:"Helvetica Neue", Helvetica, "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif; }
+
+.ui-modal-head { position:relative; height:48px; border-bottom:1px solid #efefef; border-top-left-radius:2px; border-top-right-radius:2px; background-color:#f9f9f9; padding:0 52px 0 20px; cursor:default; overflow:hidden; -webkit-user-select:none; -moz-user-select:none; user-select:none; white-space:nowrap; text-overflow:ellipsis; line-height:48px; color:#333; font-size:14px; font-weight:600; }
+
+.ui-modal-body { padding:0; }
+
+.ui-modal-icon { display:block; width:24px; height:24px; background-image:url("default/icon/sprite.png"); background-repeat:no-repeat; }
+.ui-modal-icon.ui-modal-icon-success { background-position:0 0; }
+.ui-modal-icon.ui-modal-icon-error { background-position:-24px 0; }
+.ui-modal-icon.ui-modal-icon-warning { background-position:-48px 0; }
+.ui-modal-icon.ui-modal-icon-question { background-position:-72px 0; }
+.ui-modal-icon.ui-modal-icon-smile { background-position:-96px 0; }
+.ui-modal-icon.ui-modal-icon-sad { background-position:-120px 0; }
+.ui-modal-icon.ui-modal-icon-loading { background-image:url("default/icon/loading.svg"); background-position:50% 50%; background-size:24px 24px; }
+
+.ui-modal-svg { display:block; margin:0 auto; width:40px; height:40px; background-repeat:no-repeat; background-position:50% 50%; background-size:40px auto; }
+.ui-modal-svg.ui-modal-svg-bars { background-image:url("default/svg/bars.svg"); }
+.ui-modal-svg.ui-modal-svg-oval { background-image:url("default/svg/oval.svg"); }
+.ui-modal-svg.ui-modal-svg-puff { background-image:url("default/svg/puff.svg"); }
+.ui-modal-svg.ui-modal-svg-rings { background-image:url("default/svg/rings.svg"); }
+.ui-modal-svg.ui-modal-svg-three-dot { background-image:url("default/svg/three-dot.svg"); }
+.ui-modal-svg.ui-modal-svg-three-line { background-image:url("default/svg/three-line.svg"); }
+
+.ui-modal-input { display:block; width:240px; height:36px; border:1px solid #e0e0e0; border-radius:2px; margin:0; padding:0 10px; outline:none; line-height:36px; color:#666; font-size:14px; font-weight:300; -webkit-transition:all 0.3s; -moz-transition:all 0.3s; transition:all 0.3s; }
+.ui-modal-input:hover { border-color:#66b1ff; }
+.ui-modal-input:focus { border-color:#3a8ee6; }
+
+.ui-modal-content { white-space:normal; word-break:break-all; word-wrap:break-word; line-height:24px; color:#666; font-size:14px; font-weight:300; }
+.ui-modal-content .ui-modal-icon {  }
+.ui-modal-content.ui-modal-content-relative { position:relative; padding-left:34px; }
+.ui-modal-content.ui-modal-content-relative .ui-modal-icon { position:absolute; top:0; left:0; }
+
+.ui-modal-foot { padding:0 20px 20px 20px; }
+
+.ui-modal-btn { display:inline-block; height:30px; border:1px solid #e0e0e0; border-radius:2px; background-color:#fff; margin-left:10px; padding:0 15px; cursor:pointer; vertical-align:middle; -webkit-user-select:none; -moz-user-select:none; user-select:none; text-align:center; text-decoration:none; line-height:30px; color:#333; font-size:14px; font-weight:300; -webkit-transition:all 0.3s; -moz-transition:all 0.3s; transition:all 0.3s; }
+.ui-modal-btn:hover { border-color:#66b1ff; background-color:#fff; color:#66b1ff; }
+.ui-modal-btn:active { border-color:#3a8ee6; background-color:#fff; color:#3a8ee6; }
+.ui-modal-btn:first-child { border-color:#409eff; background-color:#409eff; margin-left:0; color:#fff; }
+.ui-modal-btn:first-child:hover { border-color:#66b1ff; background-color:#66b1ff; color:#fff; }
+.ui-modal-btn:first-child:active { border-color:#3a8ee6; background-color:#3a8ee6; color:#fff; }
+
+.ui-modal-btn-close1 { position:absolute; top:18px; right:20px; width:12px; height:12px; background:url("default/btn-close1.png") no-repeat 0 50%; cursor:pointer; }
+.ui-modal-btn-close1:hover { background-position:-12px 50%; }
+
+.ui-modal-btn-close2 { position:absolute; top:-12px; right:-12px; width:30px; height:30px; background:url("default/btn-close2.png") no-repeat 0 50%; cursor:pointer; }
+.ui-modal-btn-close2:hover { background-position:-30px 50%; }
+
+/* 扩展 */
+.ui-modal-alert {  }
+
+.ui-modal-confirm {  }
+
+.ui-modal-prompt {  }
+
+.ui-modal-msg { border:none; background-color:rgba(0,0,0,0.8); box-shadow:none; }
+.ui-modal-msg .ui-modal-content { color:#fff; }
+
+.ui-modal-loading { border:none; border-radius:0; background-color:transparent; box-shadow:none; }
+
+/* 动画 */
+@-webkit-keyframes modalBounceIn {
+    0% { opacity:0; -webkit-transform:scale(0.5); }
+    100% { opacity:1; -webkit-transform:scale(1); }
+}
+@-moz-keyframes modalBounceIn {
+    0% { opacity:0; -moz-transform:scale(0.5); }
+    100% { opacity:1; -moz-transform:scale(1); }
+}
+@keyframes modalBounceIn {
+    0% { opacity:0; transform:scale(0.5); }
+    100% { opacity:1; transform:scale(1); }
+}
+
+@-webkit-keyframes modalBounceOut {
+    0% { -webkit-transform:scale(1); }
+    30% { -webkit-transform:scale(1.05); }
+    100% { opacity:0; -webkit-transform:scale(0.6); }
+}
+@-moz-keyframes modalBounceOut {
+    0% { -moz-transform:scale(1); }
+    30% { -moz-transform:scale(1.05); }
+    100% { opacity:0; -moz-transform:scale(0.6); }
+}
+@keyframes modalBounceOut {
+    0% { transform:scale(1); }
+    30% { transform:scale(1.05); }
+    100% { opacity:0; transform:scale(0.6); }
+}
+
+@-webkit-keyframes modalFadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes modalFadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+@keyframes modalFadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes modalFadeOut {
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
+@-moz-keyframes modalFadeOut {
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
+@keyframes modalFadeOut {
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
+
+@-webkit-keyframes modalFadeInUp {
+    0% { opacity:0; -webkit-transform:translateY(100%); }
+    100% { opacity:1; -webkit-transform:translateY(0); }
+}
+@-moz-keyframes modalFadeInUp {
+    0% { opacity:0; -moz-transform:translateY(100%); }
+    100% { opacity:1; -moz-transform:translateY(0); }
+}
+@keyframes modalFadeInUp {
+    0% { opacity:0; transform:translateY(100%); }
+    100% { opacity:1; transform:translateY(0); }
+}
+
+@-webkit-keyframes modalFadeOutUp {
+    0% { opacity:1; -webkit-transform:translateY(0); }
+    100% { opacity:0; -webkit-transform:translateY(-100%); }
+}
+@-moz-keyframes modalFadeOutUp {
+    0% { opacity:1; -moz-transform:translateY(0); }
+    100% { opacity:0; -moz-transform:translateY(-100%); }
+}
+@keyframes modalFadeOutUp {
+    0% { opacity:1; transform:translateY(0); }
+    100% { opacity:0; transform:translateY(-100%); }
+}
+
+@-webkit-keyframes modalFadeInDown {
+    0% { opacity:0; -webkit-transform:translateY(-100%); }
+    100% { opacity:1; -webkit-transform:translateY(0); }
+}
+@-moz-keyframes modalFadeInDown {
+    0% { opacity:0; -moz-transform:translateY(-100%); }
+    100% { opacity:1; -moz-transform:translateY(0); }
+}
+@keyframes modalFadeInDown {
+    0% { opacity:0; transform:translateY(-100%); }
+    100% { opacity:1; transform:translateY(0); }
+}
+
+@-webkit-keyframes modalFadeOutDown {
+    0% { opacity:1; -webkit-transform:translateY(0); }
+    100% { opacity:0; -webkit-transform:translateY(100%); }
+}
+@-moz-keyframes modalFadeOutDown {
+    0% { opacity:1; -moz-transform:translateY(0); }
+    100% { opacity:0; -moz-transform:translateY(100%); }
+}
+@keyframes modalFadeOutDown {
+    0% { opacity:1; transform:translateY(0); }
+    100% { opacity:0; transform:translateY(100%); }
+}
+
+.ui-modal-animate { -webkit-animation-fill-mode:both; -moz-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-duration:0.3s; -moz-animation-duration:0.3s; animation-duration:0.3s; }
+.ui-modal-animate.ui-modal-animate-bounceIn { -webkit-animation-name:modalBounceIn; -moz-animation-name:modalBounceIn; animation-name:modalBounceIn; }
+.ui-modal-animate.ui-modal-animate-bounceOut { -webkit-animation-name:modalBounceOut; -moz-animation-name:modalBounceOut; animation-name:modalBounceOut; -webkit-animation-duration:0.2s; -moz-animation-duration:0.2s; animation-duration:0.2s; }
+.ui-modal-animate.ui-modal-animate-fadeIn { -webkit-animation-name:modalFadeIn; -moz-animation-name:modalFadeIn; animation-name:modalFadeIn; }
+.ui-modal-animate.ui-modal-animate-fadeOut { -webkit-animation-name:modalFadeOut; -moz-animation-name:modalFadeOut; animation-name:modalFadeOut; -webkit-animation-duration:0.2s; -moz-animation-duration:0.2s; animation-duration:0.2s; }
+.ui-modal-animate.ui-modal-animate-fadeInUp { -webkit-animation-name:modalFadeInUp; -moz-animation-name:modalFadeInUp; animation-name:modalFadeInUp; }
+.ui-modal-animate.ui-modal-animate-fadeOutUp { -webkit-animation-name:modalFadeOutUp; -moz-animation-name:modalFadeOutUp; animation-name:modalFadeOutUp; -webkit-animation-duration:0.2s; -moz-animation-duration:0.2s; animation-duration:0.2s; }
+.ui-modal-animate.ui-modal-animate-fadeInDown { -webkit-animation-name:modalFadeInDown; -moz-animation-name:modalFadeInDown; animation-name:modalFadeInDown; }
+.ui-modal-animate.ui-modal-animate-fadeOutDown { -webkit-animation-name:modalFadeOutDown; -moz-animation-name:modalFadeOutDown; animation-name:modalFadeOutDown; -webkit-animation-duration:0.2s; -moz-animation-duration:0.2s; animation-duration:0.2s; }
